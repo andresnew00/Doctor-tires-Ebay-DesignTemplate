@@ -3,11 +3,45 @@ $primary-black: #242323;
 $tire-shop-red: #C31818;
 $primary-red: #C53C3C;
 $secondary-black: #181818;
-$white: #F2F2F2;
+$background-white: #F2F2F2;
+$font-white: #FFFFFF;
 
 // alt font
-$open-sans: 'Open Sans', sans-serif;
+$open-sans: 'Open Sans',
+sans-serif;
 
 * {
     font-family: 'Montserrat', sans-serif;
+}
+
+// header styling
+header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primary-black;
+        padding: .5em;
+        gap: .5em;
+        // convenience tire shop text
+        .center-text {
+            color: $font-white;
+            font-weight: 800;
+            display: flex;
+            flex-direction: column;
+            #second {
+                color: $tire-shop-red;
+                font-weight: bold;
+                align-self: center;
+            }
+            #third {
+                align-self: end;
+            }
+        }
+        .fedex-section {
+            display: flex;
+            flex-direction: column;
+            color: $font-white;
+        }
+    }
 }
