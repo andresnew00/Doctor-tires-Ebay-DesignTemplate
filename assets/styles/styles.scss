@@ -148,6 +148,7 @@ main {
                 flex-direction: row;
                 justify-content: start;
                 gap: 1em;
+                align-items: center;
 
                 .tile-title {
                     font-weight: 500;
@@ -165,6 +166,7 @@ main {
     .alt-direction {
         .title-section {
             flex-direction: row-reverse !important;
+            text-align: right;
         }
 
         .tile-content {
@@ -174,11 +176,17 @@ main {
         }
     }
 
+    // setting background color for the tile sections
     #red-colored {
         background-color: $primary-red;
     }
 
     #black-colored {
         background-color: $primary-black;
+    }
+
+    // aligning satisfaction tile as a column
+    #satisfaction-column {
+        flex-direction: column;
     }
 }

@@ -201,6 +201,9 @@ main .product-description-container {
       -ms-flex-pack: start;
           justify-content: start;
   gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tiles-container .tiles .tile .title-section .tile-title {
@@ -217,6 +220,7 @@ main .product-description-container {
   -webkit-box-direction: reverse !important;
       -ms-flex-direction: row-reverse !important;
           flex-direction: row-reverse !important;
+  text-align: right;
 }
 
 .tiles-container .alt-direction .tile-content span {
@@ -229,5 +233,12 @@ main .product-description-container {
 
 .tiles-container #black-colored {
   background-color: #242323;
+}
+
+.tiles-container #satisfaction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */
