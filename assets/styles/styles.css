@@ -17,6 +17,7 @@ header .container {
   background-color: #242323;
   padding: .3em;
   gap: 1.5em;
+  height: 7em;
 }
 
 header .container .center-text {
@@ -60,5 +61,103 @@ header .container .fedex-section {
 
 header .container .fedex-section .fedex-logo img {
   width: 5em;
+}
+
+main {
+  padding: 1em;
+}
+
+main .product-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: .5em;
+  background-color: #242323;
+  color: #FFFFFF;
+  font-size: .5em;
+}
+
+main .product-name-container h1 {
+  font-weight: 500;
+}
+
+main .product-image-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: .5em;
+}
+
+main .product-image-gallery .product-image img {
+  cursor: pointer;
+}
+
+main .product-image-gallery .product-image img:hover {
+  opacity: 1;
+}
+
+main .product-image-gallery .images-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .product-bullet-points-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1em;
+}
+
+main .product-bullet-points-container .bullet-title {
+  font-weight: 700;
+}
+
+main .product-bullet-points-container .product-bullet-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+main .product-bullet-points-container .product-bullet-points ul {
+  padding: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+main .product-bullet-points-container .product-bullet-points ul li img {
+  width: 1em;
+}
+
+main .product-description-container {
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */

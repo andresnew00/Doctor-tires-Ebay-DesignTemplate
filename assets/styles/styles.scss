@@ -24,6 +24,8 @@ header {
         background-color: $primary-black;
         padding: .3em;
         gap: 1.5em;
+        height: 7em;
+
         // convenience tire shop text
         .center-text {
             color: $font-white;
@@ -31,24 +33,101 @@ header {
             display: flex;
             flex-direction: column;
             font-size: .9em;
+
             #second {
                 color: $tire-shop-red;
                 font-weight: bold;
                 align-self: center;
             }
+
             #third {
                 align-self: end;
             }
         }
+
         .fedex-section {
             .fedex-logo img {
                 width: 5em;
             }
+
             font-size: .8em;
             display: flex;
             flex-direction: column;
             color: $font-white;
         }
+    }
+}
+
+main {
+    padding: 1em;
+
+    // name of product
+    .product-name-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: .5em;
+        background-color: $primary-black;
+        color: $font-white;
+        font-size: .5em;
+
+        h1 {
+            font-weight: 500;
+        }
+    }
+
+    // product image gallery
+    .product-image-gallery {
+        display: flex;
+        flex-direction: column;
+        padding-top: .5em;
+
+        .product-image img {
+            cursor: pointer;
+        }
+
+        .product-image img:hover {
+            opacity: 1;
+        }
+
+        .images-row {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    // summary bullet points
+    .product-bullet-points-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1em;
+
+        .bullet-title {
+            font-weight: 700;
+        }
+
+        .product-bullet-points {
+            display: flex;
+            flex-direction: column;
+            align-content: start;
+
+            ul {
+                padding: 0;
+                align-self: flex-start;
+                list-style-type: none;
+                font-weight: 500;
+
+                li img {
+                    width: 1em;
+                }
+            }
+
+        }
+
+    }
+    .product-description-container {
+        font-weight: 400;
     }
 }
 
