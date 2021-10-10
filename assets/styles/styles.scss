@@ -6,10 +6,6 @@ $secondary-black: #181818;
 $background-white: #F2F2F2;
 $font-white: #FFFFFF;
 
-// alt font
-$open-sans: 'Open Sans',
-sans-serif;
-
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -126,8 +122,63 @@ main {
         }
 
     }
+
     .product-description-container {
         font-weight: 400;
     }
 }
 
+.tiles-container {
+    padding: 1em;
+
+    .tiles {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .tile {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            color: $font-white;
+            padding: 2em;
+
+            .title-section {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                gap: 1em;
+
+                .tile-title {
+                    font-weight: 500;
+                }
+            }
+
+            .tile-content {
+                font-weight: 300;
+                font-size: .8em;
+            }
+        }
+    }
+
+    // reverse direction for the tile section
+    .alt-direction {
+        .title-section {
+            flex-direction: row-reverse !important;
+        }
+
+        .tile-content {
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    #red-colored {
+        background-color: $primary-red;
+    }
+
+    #black-colored {
+        background-color: $primary-black;
+    }
+}

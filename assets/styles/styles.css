@@ -160,4 +160,74 @@ main .product-bullet-points-container .product-bullet-points ul li img {
 main .product-description-container {
   font-weight: 400;
 }
+
+.tiles-container {
+  padding: 1em;
+}
+
+.tiles-container .tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.tiles-container .tiles .tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  color: #FFFFFF;
+  padding: 2em;
+}
+
+.tiles-container .tiles .tile .title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 1em;
+}
+
+.tiles-container .tiles .tile .title-section .tile-title {
+  font-weight: 500;
+}
+
+.tiles-container .tiles .tile .tile-content {
+  font-weight: 300;
+  font-size: .8em;
+}
+
+.tiles-container .alt-direction .title-section {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+}
+
+.tiles-container .alt-direction .tile-content span {
+  font-weight: 600;
+}
+
+.tiles-container #red-colored {
+  background-color: #C53C3C;
+}
+
+.tiles-container #black-colored {
+  background-color: #242323;
+}
 /*# sourceMappingURL=styles.css.map */
