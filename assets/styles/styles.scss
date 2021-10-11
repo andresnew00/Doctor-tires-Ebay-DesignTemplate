@@ -2,6 +2,7 @@
 $primary-black: #242323;
 $tire-shop-red: #C31818;
 $primary-red: #C53C3C;
+$font-red: #E43333;
 $secondary-black: #181818;
 $background-white: #F2F2F2;
 $font-white: #FFFFFF;
@@ -54,6 +55,7 @@ header {
     }
 }
 
+// product name, summary, and images
 main {
     padding: 1em;
 
@@ -128,6 +130,7 @@ main {
     }
 }
 
+// descriptive tiles
 .tiles-container {
     padding: 1em;
 
@@ -188,5 +191,26 @@ main {
     // aligning satisfaction tile as a column
     #satisfaction-column {
         flex-direction: column;
+    }
+}
+
+// auction policy
+.auction-policy-container {
+    padding: 1em;
+
+    .auction-policy {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .auction-policy-title {
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        .auction-policy-content #red-text {
+            color: $font-red;
+        }
     }
 }

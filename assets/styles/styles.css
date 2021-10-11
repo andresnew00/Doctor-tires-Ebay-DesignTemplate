@@ -241,4 +241,29 @@ main .product-description-container {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.auction-policy-container {
+  padding: 1em;
+}
+
+.auction-policy-container .auction-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.auction-policy-container .auction-policy .auction-policy-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.auction-policy-container .auction-policy .auction-policy-content #red-text {
+  color: #E43333;
+}
 /*# sourceMappingURL=styles.css.map */
