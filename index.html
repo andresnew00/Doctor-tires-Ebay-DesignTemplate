@@ -8,10 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
@@ -23,257 +19,294 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img src="images/logo.png" alt="" />
+          <img src="./assets/images/Doctor tires final 2.png" alt="" />
         </div>
         <div class="center-text">
-          YOUR CONVENIENCE <span>TIRE SHOP</span> SINCE 2012
+          <span id="first">YOUR CONVENIENCE</span>
+          <span id="second">TIRE SHOP</span>
+          <span id="third">SINCE 2012</span>
         </div>
         <div class="fedex-section">
           <div class="fedex-logo">
-            <img src="images/fedex-logo.png" alt="" />
+            <img src="./assets/images/fedex-express.png" alt="" />
           </div>
-          <div class="fedex-text">
-            <span>FREE SHIPPING same day* handling</span>
+          <div class="fedex-text">FREE SHIPPING same day* handling</div>
+        </div>
+      </div>
+    </header>
+    <!-- Product Section -->
+    <main>
+      <!-- title -->
+      <div class="product-name-container">
+        <h1>NAME OF THE PRODUCT</h1>
+      </div>
+      <!-- product image section TRY CODE-->
+      <div class="product-image-gallery">
+        <div class="container">
+          <!-- first image will go here -->
+          <img
+            src="./assets/images/Rectangle 13.png"
+            id="expandedImg"
+            style="width: 100%"
+          />
+        </div>
+        <!-- all images starting with the first will go here -->
+        <div class="images-row">
+          <div class="product-image">
+            <img
+              src="./assets/images/Rectangle 13.png"
+              alt="Snow"
+              style="width: 100%"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="product-image">
+            <img
+              src="./assets/images/Rectangle 12.png"
+              alt="Mountains"
+              style="width: 100%"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="product-image">
+            <img
+              src="./assets/images/Rectangle 13.png"
+              alt="Lights"
+              style="width: 100%"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="product-image">
+            <img
+              src="./assets/images/Rectangle 12.png"
+              alt="Mountains"
+              style="width: 100%"
+              onclick="myFunction(this);"
+            />
           </div>
         </div>
       </div>
 
-      <!-- Product Section -->
-      <main>
-        <!-- title -->
-        <div class="product-name-container">
-          <h1>NAME OF THE PRODUCT</h1>
-        </div>
-        <!-- product image section -->
-        <div class="product-image-container">
-          <div class="product-image">
-            <img src="images/product-image.png" alt="" />
-          </div>
-          <div class="product-image">
-            <img src="images/product-image.png" alt="" />
-          </div>
-          <div class="product-image">
-            <img src="images/product-image.png" alt="" />
-          </div>
-        </div>
-        <!-- product bullet points section -->
-        <div class="product-bullet-points-container">
-          <div class="bullet-title">SUMMARY</div>
+      <!-- product bullet points section -->
+      <div class="product-bullet-points-container">
+        <div class="bullet-title">SUMMARY</div>
 
-          <div class="product-bullet-points">
-            <ul>
-              <li>
-                <img src="icon" alt="icon" />
-                <span>Some Words.</span>
-              </li>
-              <li>
-                <img src="icon" alt="icon" />
-                <span>Some Words.</span>
-              </li>
-              <li>
-                <img src="icon" alt="icon" />
-                <span>Some Words.</span>
-              </li>
-              <li>
-                <img src="icon" alt="icon" />
-                <span>Some Words.</span>
-              </li>
-            </ul>
-          </div>
+        <div class="product-bullet-points">
+          <ul>
+            <li>
+              <img src="./assets/images/Vector.png" alt="icon" />
+              <span>Some Words.</span>
+            </li>
+            <li>
+              <img src="./assets/images/Vector.png" alt="icon" />
+              <span>Some Words.</span>
+            </li>
+            <li>
+              <img src="./assets/images/Vector.png" alt="icon" />
+              <span>Some Words.</span>
+            </li>
+            <li>
+              <img src="./assets/images/Vector.png" alt="icon" />
+              <span>Some Words.</span>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!-- product description section -->
-        <div class="product-description-container">
-          <div class="product-description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              euismod, nisi vel consectetur egestas, nisi nisi consectetur
-              tortor, eget tincidunt nisl nisi velit eget nisl.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              euismod, nisi vel consectetur egestas, nisi nisi consectetur
-              tortor, eget tincidunt nisl nisi velit eget nisl.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              euismod, nisi vel consectetur egestas, nisi nisi consectetur
-              tortor, eget tincidunt nisl nisi velit eget nisl.
-            </p>
+      <!-- product description section -->
+      <div class="product-description-container">
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            euismod, nisi vel consectetur egestas, nisi nisi consectetur tortor,
+            eget tincidunt nisl nisi velit eget nisl.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- tiles section -->
+    <div class="tiles-container">
+      <div class="tiles">
+        <!-- start of tiles -->
+        <div class="tile" id="red-colored">
+          <div class="title-section">
+            <div class="tile-icon">
+              <img src="./assets/images/Vector-car.png" alt="" />
+            </div>
+            <div class="tile-title">
+              <span>FAST AND FREE FEDEX SHIPPING.</span>
+            </div>
+          </div>
+          <div class="tile-content">
+            <span
+              >WE SHIP WHITHIN 1 BUSINESS DAY AFTER RECEIVING A PAYMENT.</span
+            >
           </div>
         </div>
 
-        <!-- tiles section -->
-        <div class="tiles-container">
-          <div class="tiles">
-            <!-- start of tiles -->
-            <div class="tile">
-              <div class="title-section">
-                <div class="tile-icon">
-                  <img src="images/tile-icon.png" alt="" />
-                </div>
-                <div class="tile-title">
-                  <span>Some title Words.</span>
-                </div>
-              </div>
-              <div class="tile-content">
-                <span>Some content Words.</span>
-              </div>
+        <div class="tile alt-direction" id="black-colored">
+          <div class="title-section">
+            <div class="tile-icon">
+              <img src="./assets/images/Shield.png" alt="" />
             </div>
-
-            <div class="tile">
-              <div class="title-section">
-                <div class="tile-icon">
-                  <img src="images/tile-icon.png" alt="" />
-                </div>
-                <div class="tile-title">
-                  <span>Some title Words.</span>
-                </div>
-              </div>
-              <div class="tile-content">
-                <span>Some content Words.</span>
-              </div>
+            <div class="tile-title">
+              <span>100 % WORKING TIRES FREE OF LEAKS AND/OR DAMAGES.</span>
             </div>
+          </div>
+          <div class="tile-content">
+            WE <span>DO NOT</span> SELL TIRES WITH REPAIRS ON THE SIDEWALL
+          </div>
+        </div>
 
-            <div class="tile">
-              <div class="title-section">
-                <div class="tile-icon">
-                  <img src="images/tile-icon.png" alt="" />
-                </div>
-                <div class="tile-title">
-                  <span>Some title Words.</span>
-                </div>
-              </div>
-              <div class="tile-content">
-                <span>Some content Words.</span>
-              </div>
+        <div class="tile" id="black-colored">
+          <div class="title-section">
+            <div class="tile-icon">
+              <img src="./assets/images/Money.png" alt="" />
             </div>
-
-            <div class="tile">
-              <div class="title-section">
-                <div class="tile-icon">
-                  <img src="images/tile-icon.png" alt="" />
-                </div>
-                <div class="tile-title">
-                  <span>Some title Words.</span>
-                </div>
-              </div>
+            <div class="tile-title">
+              <span>MONEY BACK GARANTEE.</span>
             </div>
+          </div>
+          <div class="tile-content">
+            <span
+              >IF YOU HAVE AN ISSUE WITH THE TIRE ON ARRIVAL, WE ACCEPT RETURNS,
+              AS LONG AS, THE TIRE WAS NOT DRIVEN AFTER PURCHASE.
+            </span>
+          </div>
+        </div>
 
-            <div class="tile">
-              <div class="title-section">
-                <div class="tile-icon">
-                  <img src="images/tile-icon.png" alt="" />
-                </div>
-                <div class="tile-title">
-                  <span>Some title Words.</span>
-                </div>
-              </div>
+        <div class="tile" id="red-colored">
+          <div class="title-section">
+            <div class="tile-icon">
+              <img src="./assets/images/check-all.png" alt="" />
+            </div>
+            <div class="tile-title">
+              <span>EACH TIRE IS DOUBLE CHECKED BEFORE SHIPMENT</span>
             </div>
           </div>
         </div>
 
-        <!-- auction policy -->
-        <div class="auction-policy-container">
-          <div class="auction-policy">
-            <div class="auction-policy-title">
-              <span>AUCTION POLICY</span>
+        <div class="tile" id="black-colored">
+          <div class="title-section" id="satisfaction-column">
+            <div class="tile-icon">
+              <img src="./assets/images/happy.png" alt="" />
             </div>
-            <div class="auction-policy-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                euismod, nisi vel consectetur egestas, nisi nisi consectetur
-                tortor, eget tincidunt nisl nisi velit eget nisl.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                euismod, nisi vel consectetur egestas, nisi nisi consectetur
-                tortor, eget tincidunt nisl nisi velit eget nisl.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                euismod, nisi vel consectetur egestas, nisi nisi consectetur
-                tortor, eget tincidunt nisl nisi velit eget nisl.
-              </p>
+            <div class="tile-title">
+              <span>SATISFACTION GARANTEED.</span>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- tire brands section -->
-        <div class="tire-brand-container">
-          <div class="content-container">
-            <h2>BEST BRANDS FOR THE BEST PRICES</h2>
-            <div class="images-container">
-              <div class="image-container">
-                <img src="images/tire-brand-1.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-2.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-3.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-4.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-5.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-6.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-7.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-8.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-9.png" alt="" />
-              </div>
-              <div class="image-container">
-                <img src="images/tire-brand-10.png" alt="" />
-              </div>
-            </div>
-          </div>
+    <!-- auction policy -->
+    <div class="auction-policy-container">
+      <div class="auction-policy">
+        <div class="auction-policy-title">
+          <span>AUCTION POLICY</span>
         </div>
+        <div class="auction-policy-content">
+          <p>
+            100% working tires, free of leaks and damage. We inspect all tires
+            individually when receiving new inventory and before shipping. If we
+            find leaks/defects before shipping.
+          </p>
+          <p id="red-text">
+            Some tires may have been repaired in the tread area. We do not sell
+            tires with repairs in the sidewalls. All of our tires are inspected,
+            air tested, and professionally repaired/patched if required. We do
+            not sell tires with repairs in the sidewalls.
+          </p>
+          <p>
+            We do guarantee all of our repairs/patches for as long as you own a
+            tire. Unfortunately, we can not indicate each individual tire repair
+            due to our inventory processing system limitations. If it is a
+            concern for you please contact us by phone or email before
+            purchasing and we will kindly check it for you.
+          </p>
+          <p id="red-text">
+            We cannot guarantee evenly worn tire tread as it may vary depending
+            on the previous driving experience, car suspension, and road
+            conditions.
+          </p>
+          <p>
+            If you decide you no longer need/want a tire that you purchased, a
+            RESTOCKING fee of 20% will be applied, you will need to ship it back
+            at your expense before you can receive a refund. A refund WILL NOT
+            be issued if tire/s were driven since purchase.
+          </p>
+        </div>
+      </div>
+    </div>
 
-        <!-- terms and conditions sections -->
-        <div class="terms-container">
-          <div class="terms-content-container">
-            <h2>TERMS AND CONDITIONS</h2>
-            <div class="terms-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                euismod, nisi vel consectetur egestas, nisi nisi consectetur
-                tortor, eget tincidunt nisl nisi velit eget nisl.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                euismod, nisi vel consectetur egestas, nisi nisi consectetur
-                tortor, eget tincidunt nisl nisi velit eget nisl.
-              </p>
-            </div>
+    <!-- tire brands section -->
+    <div class="tire-brand-container">
+      <div class="content-container">
+        <h2>BEST BRANDS FOR THE BEST PRICES</h2>
+        <div class="images-container">
+          <div class="image-container">
+            <img src="./assets/images/michelin.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="./assets/images/continental.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="./assets/images/b.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="./assets/images/goodrich.png" alt="" />
+          </div>
+          <div class="image-container">
+            <img src="./assets/images/uniroyal.png" alt="" />
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- footer section -->
-        <div class="footer-container">
-          <div class="footer-content-container">
-            <div class="logo-footer">
-              <img src="logo" alt="" />
-            </div>
-            <nav>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
+    <!-- terms and conditions sections -->
+    <div class="terms-container">
+      <div class="terms-content-container">
+        <h2>TERMS AND CONDITIONS</h2>
+        <div class="terms-content">
+          <p>
+            Doctor Tires does not accept any liability or provides any warranty
+            for the NEW tires sold at this auction (with the exception of the
+            return/refund policy).
+          </p>
+          <p>
+            All the tires sold are USED and have various treads. The treads have
+            been measured by the staff, and are accurate. Tires have all been
+            inspected for air damage. The tires sold are in AS IS condition and
+            are USED.
+          </p>
         </div>
-      </main>
-    </header>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer-container">
+      <div class="footer-content-container">
+        <div class="logo-footer">
+          <img src="./assets/images/Doctor tires final 2.png" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><a target="_blank" href="https://doctortires.com/">Home</a></li>
+            <li><a target="_blank" href="https://doctortires.com/services-2/">Services</a></li>
+            <li><a target="_blank" href="https://doctortires.com/portfolio/">Portfolio</a></li>
+            <li><a target="_blank" href="https://doctortires.com/contacts/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
   </body>
 </html>

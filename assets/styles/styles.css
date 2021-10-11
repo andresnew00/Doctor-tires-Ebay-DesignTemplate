@@ -1,4 +1,359 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  background-color: #F2F2F2;
+  height: auto;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #242323;
+  padding: .3em;
+  gap: 1.5em;
+  height: 7em;
+}
+
+header .container .center-text {
+  color: #FFFFFF;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .9em;
+}
+
+header .container .center-text #second {
+  color: #C31818;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .container .center-text #third {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+header .container .fedex-section {
+  font-size: .8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FFFFFF;
+}
+
+header .container .fedex-section .fedex-logo img {
+  width: 5em;
+}
+
+main {
+  padding: 1em;
+}
+
+main .product-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: .5em;
+  background-color: #242323;
+  color: #FFFFFF;
+  font-size: .5em;
+}
+
+main .product-name-container h1 {
+  font-weight: 500;
+}
+
+main .product-image-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: .5em;
+}
+
+main .product-image-gallery .product-image img {
+  cursor: pointer;
+}
+
+main .product-image-gallery .product-image img:hover {
+  opacity: 1;
+}
+
+main .product-image-gallery .images-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .product-bullet-points-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1em;
+}
+
+main .product-bullet-points-container .bullet-title {
+  font-weight: 700;
+}
+
+main .product-bullet-points-container .product-bullet-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+main .product-bullet-points-container .product-bullet-points ul {
+  padding: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+main .product-bullet-points-container .product-bullet-points ul li img {
+  width: 1em;
+}
+
+main .product-description-container {
+  font-weight: 400;
+}
+
+.tiles-container {
+  padding: 1em;
+}
+
+.tiles-container .tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.tiles-container .tiles .tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  color: #FFFFFF;
+  padding: 2em;
+}
+
+.tiles-container .tiles .tile .title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tiles-container .tiles .tile .title-section .tile-title {
+  font-weight: 500;
+}
+
+.tiles-container .tiles .tile .tile-content {
+  font-weight: 300;
+  font-size: .8em;
+}
+
+.tiles-container .alt-direction .title-section {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+  text-align: right;
+}
+
+.tiles-container .alt-direction .tile-content span {
+  font-weight: 600;
+}
+
+.tiles-container #red-colored {
+  background-color: #C53C3C;
+}
+
+.tiles-container #black-colored {
+  background-color: #242323;
+}
+
+.tiles-container #satisfaction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.auction-policy-container {
+  padding: 1em;
+}
+
+.auction-policy-container .auction-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.auction-policy-container .auction-policy .auction-policy-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.auction-policy-container .auction-policy .auction-policy-content #red-text {
+  color: #E43333;
+}
+
+.tire-brand-container .content-container {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #242323;
+  gap: 1em;
+  padding-bottom: 3em;
+}
+
+.tire-brand-container .content-container h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 500;
+}
+
+.tire-brand-container .content-container .images-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4em;
+  background-color: #242323;
+}
+
+.terms-container .terms-content-container {
+  padding: 1em;
+}
+
+.terms-container .terms-content-container h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.footer-container .footer-content-container {
+  padding: 1em;
+  background-color: #242323;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container .footer-content-container .logo-footer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer-container .footer-content-container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1em;
+  list-style-type: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.footer-container .footer-content-container nav ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=styles.css.map */
