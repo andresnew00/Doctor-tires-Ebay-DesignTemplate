@@ -11,6 +11,10 @@ $font-white: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: $background-white;
+}
+
 // header styling
 header {
     .container {
@@ -214,3 +218,30 @@ main {
         }
     }
 }
+
+// brands section
+.tire-brand-container {
+
+    .content-container {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        background-color: $primary-black;
+        gap: 1em;
+        padding-bottom: 3em;
+        h2 {
+            color: $font-white;
+            text-align: center;
+            font-weight: 500;
+        }
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4em;
+            background-color: $primary-black;
+        }
+    }
+}
+
