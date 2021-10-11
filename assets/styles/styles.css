@@ -308,4 +308,14 @@ main .product-description-container {
   gap: 4em;
   background-color: #242323;
 }
+
+.terms-container .terms-content-container {
+  padding: 1em;
+}
+
+.terms-container .terms-content-container h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+}
 /*# sourceMappingURL=styles.css.map */
