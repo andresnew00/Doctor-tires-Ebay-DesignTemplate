@@ -4,6 +4,7 @@
 
 body {
   background-color: #F2F2F2;
+  height: auto;
 }
 
 header .container {
@@ -317,5 +318,42 @@ main .product-description-container {
   text-align: center;
   font-weight: 600;
   font-size: 1.2em;
+}
+
+.footer-container .footer-content-container {
+  padding: 1em;
+  background-color: #242323;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container .footer-content-container .logo-footer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer-container .footer-content-container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1em;
+  list-style-type: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.footer-container .footer-content-container nav ul a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=styles.css.map */

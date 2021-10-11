@@ -13,6 +13,7 @@ $font-white: #FFFFFF;
 
 body {
     background-color: $background-white;
+    height: auto;
 }
 
 // header styling
@@ -229,11 +230,13 @@ main {
         background-color: $primary-black;
         gap: 1em;
         padding-bottom: 3em;
+
         h2 {
             color: $font-white;
             text-align: center;
             font-weight: 500;
         }
+
         .images-container {
             display: flex;
             flex-direction: column;
@@ -250,10 +253,39 @@ main {
 
     .terms-content-container {
         padding: 1em;
+
         h2 {
             text-align: center;
             font-weight: 600;
             font-size: 1.2em;
+        }
+    }
+}
+
+// footer
+.footer-container {
+    .footer-content-container {
+        padding: 1em;
+        background-color: $primary-black;
+        display: flex;
+        flex-direction: column;
+
+        .logo-footer {
+            align-self: center;
+        }
+
+        nav {
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                list-style-type: none;
+                align-self: center;
+                a {
+                    text-decoration: none;
+                    color: $font-white;
+                }
+            }
         }
     }
 }
