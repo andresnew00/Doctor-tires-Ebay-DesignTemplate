@@ -335,6 +335,35 @@ main {
         }
     }
 
+    .tiles-container {
+        padding: 2em;
+        .tiles-first-row {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            justify-content: space-evenly;
+        }
+
+        .tiles-second-row {
+            display: flex;
+            gap: 1em;
+
+            .big-tile {
+                justify-content: center;
+                gap: 3em;
+            }
+
+            .happy-tile {
+                text-align: center;
+            }
+
+            .internal-column {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
