@@ -337,6 +337,7 @@ main {
 
     .tiles-container {
         padding: 2em;
+
         .tiles-first-row {
             display: flex;
             flex-direction: row;
@@ -361,6 +362,36 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: 1em;
+            }
+        }
+    }
+
+    .auction-policy-container {
+        padding: 2em;
+    }
+
+    .tire-brand-container {
+        .content-container {
+            padding: 2em;
+
+            .images-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                place-content: center;
+            }
+        }
+    }
+
+    .terms-container {
+        padding: 2em;
+    }
+
+    .footer-container {
+        .footer-content-container {
+            padding: 2em;
+
+            nav ul {
+                justify-content: center;
             }
         }
     }

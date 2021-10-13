@@ -453,5 +453,31 @@ main .product-description-container {
             flex-direction: column;
     gap: 1em;
   }
+  .auction-policy-container {
+    padding: 2em;
+  }
+  .tire-brand-container .content-container {
+    padding: 2em;
+  }
+  .tire-brand-container .content-container .images-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    place-content: center;
+  }
+  .terms-container {
+    padding: 2em;
+  }
+  .footer-container .footer-content-container {
+    padding: 2em;
+  }
+  .footer-container .footer-content-container nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
