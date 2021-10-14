@@ -7,6 +7,9 @@ $secondary-black: #181818;
 $background-white: #F2F2F2;
 $font-white: #FFFFFF;
 
+// max width of screen
+$max-size-screen: 1600px;
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -48,6 +51,9 @@ header {
         }
 
         .fedex-section {
+            width: 10em;
+            font-size: 1em;
+
             .fedex-logo img {
                 width: 5em;
             }
@@ -114,10 +120,13 @@ main {
             display: flex;
             flex-direction: column;
             align-content: start;
+            gap: 1em;
 
             ul {
+                gap: 1em;
+                display: flex;
+                flex-direction: column;
                 padding: 0;
-                align-self: flex-start;
                 list-style-type: none;
                 font-weight: 500;
 
@@ -143,6 +152,24 @@ main {
         display: flex;
         flex-direction: column;
         gap: 1em;
+
+        .tiles-first-row {
+            gap: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tiles-second-row {
+            gap: 1em;
+            display: flex;
+            flex-direction: column;
+
+            .internal-column {
+                gap: 1em;
+                display: flex;
+                flex-direction: column;
+            }
+        }
 
         .tile {
             display: flex;
@@ -297,6 +324,7 @@ main {
         .container {
             padding: 2em;
             height: auto;
+
         }
     }
 
@@ -337,31 +365,33 @@ main {
 
     .tiles-container {
         padding: 2em;
-
-        .tiles-first-row {
-            display: flex;
-            flex-direction: row;
-            gap: 1em;
-            justify-content: space-evenly;
-        }
-
-        .tiles-second-row {
-            display: flex;
-            gap: 1em;
-
-            .big-tile {
-                justify-content: center;
-                gap: 3em;
-            }
-
-            .happy-tile {
-                text-align: center;
-            }
-
-            .internal-column {
+        .tiles {
+            .tiles-first-row {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 gap: 1em;
+                justify-content: space-evenly;
+            }
+
+            .tiles-second-row {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+
+                .big-tile {
+                    justify-content: center;
+                    gap: 3em;
+                }
+
+                .happy-tile {
+                    text-align: center;
+                }
+
+                .internal-column {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                }
             }
         }
     }
@@ -398,7 +428,75 @@ main {
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    header {
+        max-width: $max-size-screen;
+
+        .container {
+            .center-text {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    main {
+        padding: 3em;
+
+        .product-name-container {
+            max-width: $max-size-screen;
+
+            .product-images-summary {
+                .product-image-gallery {}
+            }
+        }
+    }
+
+    .tiles-container {
+        padding: 3em;
+        max-width: $max-size-screen;
+    }
+
+    .auction-policy-container {
+        max-width: $max-size-screen;
+
+        .auction-policy-content {
+            padding: 3em;
+        }
+    }
+
+    .tire-brand-container {
+        max-width: $max-size-screen;
+
+        .content-container {
+            padding: 3em;
+        }
+    }
+
+    .terms-container {
+        max-width: $max-size-screen;
+
+        .terms-content-container {
+            padding: 3em;
+        }
+    }
+
+    .footer-container {
+        max-width: $max-size-screen;
+
+        .footer-content-container {
+            padding: 3em;
+        }
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    // body text-align center web-kit
+    body {
+        max-width: 1080px;
+        margin: 0 auto !important;
+        float: none !important;
+    }
+}
