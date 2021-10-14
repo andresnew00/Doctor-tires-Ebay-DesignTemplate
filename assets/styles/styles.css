@@ -20,7 +20,7 @@ header .container {
       -ms-flex-align: center;
           align-items: center;
   background-color: #242323;
-  padding: .3em;
+  padding: 1em;
   gap: 1.5em;
   height: 7em;
 }
@@ -53,6 +53,8 @@ header .container .center-text #third {
 }
 
 header .container .fedex-section {
+  width: 10em;
+  font-size: 1em;
   font-size: .8em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,12 +150,19 @@ main .product-bullet-points-container .product-bullet-points {
           flex-direction: column;
   -ms-flex-line-pack: start;
       align-content: start;
+  gap: 1em;
 }
 
 main .product-bullet-points-container .product-bullet-points ul {
+  gap: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   list-style-type: none;
   font-weight: 500;
 }
@@ -179,6 +188,39 @@ main .product-description-container {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1em;
+}
+
+.tiles-container .tiles .tiles-first-row {
+  gap: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tiles-container .tiles .tiles-second-row {
+  gap: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tiles-container .tiles .tiles-second-row .internal-column {
+  gap: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .tiles-container .tiles .tile {
@@ -355,5 +397,184 @@ main .product-description-container {
 .footer-container .footer-content-container nav ul a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  header .container {
+    padding: 2em;
+    height: auto;
+  }
+  main {
+    padding: 2em;
+  }
+  main .product-images-summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 1em;
+  }
+  main .product-images-summary .product-image-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  main .product-images-summary .product-image-gallery .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  main .product-images-summary .product-image-gallery .images-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .product-images-summary .product-bullet-points-container {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .tiles-container {
+    padding: 2em;
+  }
+  .tiles-container .tiles .tiles-first-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1em;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .tiles-container .tiles .tiles-second-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1em;
+  }
+  .tiles-container .tiles .tiles-second-row .big-tile {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3em;
+  }
+  .tiles-container .tiles .tiles-second-row .happy-tile {
+    text-align: center;
+  }
+  .tiles-container .tiles .tiles-second-row .internal-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1em;
+  }
+  .auction-policy-container {
+    padding: 2em;
+  }
+  .tire-brand-container .content-container {
+    padding: 2em;
+  }
+  .tire-brand-container .content-container .images-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    place-content: center;
+  }
+  .terms-container {
+    padding: 2em;
+  }
+  .footer-container .footer-content-container {
+    padding: 2em;
+  }
+  .footer-container .footer-content-container nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    max-width: 1600px;
+  }
+  header .container .center-text {
+    font-size: 1.2em;
+  }
+  main {
+    padding: 3em;
+  }
+  main .product-name-container {
+    max-width: 1600px;
+  }
+  .tiles-container {
+    padding: 3em;
+    max-width: 1600px;
+  }
+  .auction-policy-container {
+    max-width: 1600px;
+  }
+  .auction-policy-container .auction-policy-content {
+    padding: 3em;
+  }
+  .tire-brand-container {
+    max-width: 1600px;
+  }
+  .tire-brand-container .content-container {
+    padding: 3em;
+  }
+  .terms-container {
+    max-width: 1600px;
+  }
+  .terms-container .terms-content-container {
+    padding: 3em;
+  }
+  .footer-container {
+    max-width: 1600px;
+  }
+  .footer-container .footer-content-container {
+    padding: 3em;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1080px;
+    margin: 0 auto !important;
+    float: none !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

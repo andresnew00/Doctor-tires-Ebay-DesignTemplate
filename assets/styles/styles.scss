@@ -7,6 +7,9 @@ $secondary-black: #181818;
 $background-white: #F2F2F2;
 $font-white: #FFFFFF;
 
+// max width of screen
+$max-size-screen: 1600px;
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,7 +27,7 @@ header {
         flex-wrap: nowrap;
         align-items: center;
         background-color: $primary-black;
-        padding: .3em;
+        padding: 1em;
         gap: 1.5em;
         height: 7em;
 
@@ -48,6 +51,9 @@ header {
         }
 
         .fedex-section {
+            width: 10em;
+            font-size: 1em;
+
             .fedex-logo img {
                 width: 5em;
             }
@@ -114,10 +120,13 @@ main {
             display: flex;
             flex-direction: column;
             align-content: start;
+            gap: 1em;
 
             ul {
+                gap: 1em;
+                display: flex;
+                flex-direction: column;
                 padding: 0;
-                align-self: flex-start;
                 list-style-type: none;
                 font-weight: 500;
 
@@ -143,6 +152,24 @@ main {
         display: flex;
         flex-direction: column;
         gap: 1em;
+
+        .tiles-first-row {
+            gap: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tiles-second-row {
+            gap: 1em;
+            display: flex;
+            flex-direction: column;
+
+            .internal-column {
+                gap: 1em;
+                display: flex;
+                flex-direction: column;
+            }
+        }
 
         .tile {
             display: flex;
@@ -281,11 +308,195 @@ main {
                 gap: 1em;
                 list-style-type: none;
                 align-self: center;
+
                 a {
                     text-decoration: none;
                     color: $font-white;
                 }
             }
         }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    header {
+        .container {
+            padding: 2em;
+            height: auto;
+
+        }
+    }
+
+    main {
+        padding: 2em;
+
+        .product-images-summary {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 1em;
+
+            .product-image-gallery {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 2;
+
+                .container {
+                    display: flex;
+                    width: 100%;
+
+                }
+
+                .images-row {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+
+
+            }
+
+            .product-bullet-points-container {
+                flex-grow: 1;
+            }
+        }
+    }
+
+    .tiles-container {
+        padding: 2em;
+        .tiles {
+            .tiles-first-row {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                justify-content: space-evenly;
+            }
+
+            .tiles-second-row {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+
+                .big-tile {
+                    justify-content: center;
+                    gap: 3em;
+                }
+
+                .happy-tile {
+                    text-align: center;
+                }
+
+                .internal-column {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                }
+            }
+        }
+    }
+
+    .auction-policy-container {
+        padding: 2em;
+    }
+
+    .tire-brand-container {
+        .content-container {
+            padding: 2em;
+
+            .images-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                place-content: center;
+            }
+        }
+    }
+
+    .terms-container {
+        padding: 2em;
+    }
+
+    .footer-container {
+        .footer-content-container {
+            padding: 2em;
+
+            nav ul {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    header {
+        max-width: $max-size-screen;
+
+        .container {
+            .center-text {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    main {
+        padding: 3em;
+
+        .product-name-container {
+            max-width: $max-size-screen;
+
+            .product-images-summary {
+                .product-image-gallery {}
+            }
+        }
+    }
+
+    .tiles-container {
+        padding: 3em;
+        max-width: $max-size-screen;
+    }
+
+    .auction-policy-container {
+        max-width: $max-size-screen;
+
+        .auction-policy-content {
+            padding: 3em;
+        }
+    }
+
+    .tire-brand-container {
+        max-width: $max-size-screen;
+
+        .content-container {
+            padding: 3em;
+        }
+    }
+
+    .terms-container {
+        max-width: $max-size-screen;
+
+        .terms-content-container {
+            padding: 3em;
+        }
+    }
+
+    .footer-container {
+        max-width: $max-size-screen;
+
+        .footer-content-container {
+            padding: 3em;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    // body text-align center web-kit
+    body {
+        max-width: 1080px;
+        margin: 0 auto !important;
+        float: none !important;
     }
 }
