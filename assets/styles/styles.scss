@@ -93,6 +93,7 @@ main {
 
         .product-image img {
             cursor: pointer;
+            height: 100%;
         }
 
         .product-image img:hover {
@@ -103,6 +104,7 @@ main {
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
+            gap: .5em;
         }
     }
 
@@ -324,7 +326,6 @@ main {
         .container {
             padding: 2em;
             height: auto;
-
         }
     }
 
@@ -341,24 +342,27 @@ main {
                 display: flex;
                 flex-direction: row;
                 flex-grow: 2;
+                gap: .5em;
+                width: 80%;
 
                 .container {
                     display: flex;
                     width: 100%;
-
+                    flex-grow: 4;
                 }
 
                 .images-row {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                    flex-shrink: 6;
                 }
 
 
             }
 
             .product-bullet-points-container {
-                flex-grow: 1;
+                flex-grow: 2;
             }
         }
     }
